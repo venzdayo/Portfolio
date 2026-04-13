@@ -11,7 +11,6 @@ function App() {
 
       <div className="hero min-h-screen bg-transparent">
         <div className="hero-content flex-col lg:flex-row">
-          <img src={heroImg} className="max-w-xs"/>
           <div>
             <h1 className="hero-title">VENZ</h1>
             <h1 className="hero-title">MILADO</h1>
