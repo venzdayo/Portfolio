@@ -12,6 +12,9 @@
   
   --color-white: #ffffff;
   --color-black: #000000;
+  --color-dark-gray: #333333;
+
+  --font-thick: 'Archivo Black', sans-serif;
 }
 
 @layer base {
@@ -34,5 +37,14 @@
   #root {
     width: 100%;
     margin: 0 auto;
+  }
+
+  .hero-title {
+    font-family: var(--font-thick);
+    font-size: clamp(3rem, 8vw, 6rem); /* Responsive size */
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: var(--text-main);
+    line-height: 0.85;
   }
 }
