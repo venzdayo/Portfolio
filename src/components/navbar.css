@@ -1,0 +1,64 @@
+.nav-link {
+    font-weight: bold;
+    color: var(--color-white);
+    font-family: var(--font-jetbrains);
+}
+
+.navtext {
+    text-decoration: none;
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.navtext:before {
+    content: "[";
+    margin-right: 3px;
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.navtext:after {
+    content: "]";
+    margin-left: 3px;
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: transform 0.3s, opacity 0.2s;
+}
+
+.navtext:hover:before,
+.navtext:hover:after {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.navtext:hover {
+    background-color: transparent !important;
+    color: inherit !important;
+}
+
+/* Navbar bracket effects on scroll */
+.navbar:before {
+    content: "[";
+    color: var(--color-white);
+    margin-right: 8px;
+    transform: translateX(-35px) translateY(-5px) scale(5.5);
+    font-weight: bold;
+    font-family: var(--font-jetbrains);
+    opacity: var(--bracket-opacity, 0);
+    transition: opacity 0.2s;
+    display: inline-block;
+}
+
+.navbar:after {
+    content: "]";
+    color: var(--color-white);
+    margin-left: 8px;
+    transform: translateX(35px) translateY(-5px) scale(5.5);
+    font-weight: bold;
+    font-family: var(--font-jetbrains);
+    opacity: var(--bracket-opacity, 0);
+    transition: opacity 0.2s;
+    display: inline-block;
+}

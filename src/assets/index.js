@@ -1,0 +1,11 @@
+// Logos
+export { default as VMBlack } from './logos/VM-black.png'
+export { default as VMCrimson } from './logos/VM-crimson.png'
+export { default as VMCrimsonSvg } from './logos/VM-crimson.svg'
+export { default as VMDarkOrange } from './logos/VM-dark-orange.png'
+export { default as VMDarkRose } from './logos/VM-dark-rose.png'
+export { default as VMDustyPink } from './logos/VM-dusty-pink.png'
+export { default as VMLightOrange } from './logos/VM-light-orange.png'
+export { default as VMOrange } from './logos/VM-orange.png'
+export { default as VMPink } from './logos/VM-pink.png'
+export { default as VMWhite } from './logos/VM-white.png'
