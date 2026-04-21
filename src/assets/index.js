@@ -9,3 +9,7 @@ export { default as VMLightOrange } from './logos/VM-light-orange.png'
 export { default as VMOrange } from './logos/VM-orange.png'
 export { default as VMPink } from './logos/VM-pink.png'
 export { default as VMWhite } from './logos/VM-white.png'
+
+// Images
+export { default as flag } from './flag.png'
+export { default as building } from './building.png'

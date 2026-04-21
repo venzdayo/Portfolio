@@ -34,6 +34,7 @@
     background-color: var(--color-sand);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -42,6 +43,9 @@
     min-width: 320px;
     min-height: 100vh;
     position: relative;
+    overflow-x: hidden;
+    background-size: 40px 40px;
+    background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
   }
 
   #root {

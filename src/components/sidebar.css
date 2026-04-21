@@ -1,0 +1,30 @@
+.timeline-box {
+    min-width: 100px;
+    position: relative;
+    margin-left: -5px;
+    padding-left: 30px;
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.2s linear;
+    border-radius: 0;
+    clip-path: polygon(0 0, calc(100% - 15px) 0, 100% 100%, 0 100%);
+    overflow: visible;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-middle svg {
+    color: #CC0000;
+}
+
+.timeline-middle svg:hover {
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
+}
+
+a:hover ~ .timeline-box {
+    visibility: visible;
+    opacity: 1;
+    transform: scaleX(1);
+}
