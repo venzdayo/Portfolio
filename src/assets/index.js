@@ -13,3 +13,6 @@ export { default as VMWhite } from './logos/VM-white.png'
 // Images
 export { default as flag } from './flag.png'
 export { default as building } from './building.png'
+export { default as adam } from './adam.png'
+export { default as building2 } from './building2.png'
+export { default as dimension } from './dimension.png'

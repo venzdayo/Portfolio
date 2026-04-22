@@ -1,0 +1,17 @@
+.hero-title {
+    font-family: var(--font-bebas);
+    text-transform: uppercase;
+    letter-spacing: -5px;
+    line-height: 0.9;
+    color: var(--text-main);
+  }
+  
+  @media (min-width: 768px) {
+    .hero-title {
+      letter-spacing: -10px;
+    }
+  }
+
+  .logo {
+    filter: drop-shadow(5px 5px 0 var(--color-dark-gray)) drop-shadow(-2px -2px 0 var(--color-sand));
+  }

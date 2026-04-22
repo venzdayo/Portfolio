@@ -46,6 +46,7 @@
     overflow-x: hidden;
     background-size: 40px 40px;
     background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);
+    background-attachment: fixed;
   }
 
   #root {
@@ -53,18 +54,27 @@
     margin: 0 auto;
   }
 
-  .hero-title {
-    font-family: var(--font-bebas);
-    text-transform: uppercase;
-    letter-spacing: -5px;
-    line-height: 0.9;
-    color: var(--text-main);
+  .typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid var(--color-dark-orange); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, start),
+      blink-caret .75s step-start infinite;
   }
-  
-  @media (min-width: 768px) {
-    .hero-title {
-      letter-spacing: -10px;
-    }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
   }
 
   .paperOverlay {

@@ -19,7 +19,7 @@
     color: #CC0000;
 }
 
-.timeline-middle svg:hover {
+.timeline-middle:hover {
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.4));
 }
 
