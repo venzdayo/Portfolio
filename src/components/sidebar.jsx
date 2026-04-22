@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import '../index.css'
 import './sidebar.css'
 import * as assets from '../assets'
 

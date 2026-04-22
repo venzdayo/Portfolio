@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import Ruler from './ruler'
-import '../index.css'
 import './home.css'
 import * as assets from '../assets'
 
@@ -27,23 +26,23 @@ export default function Home() {
         <Ruler />
 
         {/* IMAGES */}
-        <img draggable="false" className="absolute bottom-0 left-0 max-w-[35vw] object-cover -z-15" src={assets.building} alt="Background" />
-        <img draggable="false" className="absolute bottom-0 lg:right-45 max-w-[30vw] object-cover -z-10" src={assets.building2} alt="Background"/>
-        <img draggable="false" className="absolute bottom-0 right-0 max-w-[32vw] object-cover" src={assets.flag} alt="Background" style={{ transform: "rotate(10deg)" }} />
+        <img draggable="false" className="absolute bottom-0 left-0 max-w-[35vw] object-cover -z-15 slide-left" src={assets.building} alt="Background" />
+        <img draggable="false" className="absolute bottom-0 lg:right-45 max-w-[30vw] object-cover -z-10 slide-right" src={assets.building2} alt="Background"/>
+        <img draggable="false" className="absolute bottom-0 right-0 max-w-[32vw] object-cover slide-right" src={assets.flag} alt="Background" style={{ "--rotation": "rotate(10deg)" }}/>
 
         {/* SHAPES  */}
-        <div className="absolute h-80 w-80 left-30 top-60 -z-20 rounded-full bg-dark-orange opacity-80"></div>
-        <div className="absolute bottom-0 right-45 opacity-80 -z-20" style={{
+        <div className="absolute h-80 w-80 left-30 top-60 -z-20 rounded-full bg-dark-orange opacity-80 slide-left"></div>
+        <div className="absolute bottom-0 right-45 opacity-80 -z-20 slide-right" style={{
           width: 0, 
           height: 0, 
           borderLeft: '160px solid transparent', 
           borderRight: '160px solid transparent', 
           borderBottom: '500px solid var(--color-dark-orange)',
-          transform: "rotate(-66deg)"}}
+          "--rotation": "rotate(-66deg)" }} 
         ></div>
 
         {/* HERO */}
-        <div className="hero-content flex-col text-dark-gray">
+        <div className="hero-content flex-col text-dark-gray slide-bottom">
           <p className="-mb-7 font-bold font-jetbrains select-none" >1917 CM</p>
           <img 
               draggable="false"

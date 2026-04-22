@@ -1,0 +1,43 @@
+.slide-left {
+  opacity: 0;
+  transform: translateX(-20%) var(--rotation, rotate(0deg));
+  transition: all .5s ease;
+}
+
+.animate-slide-left {
+  opacity: 1;
+  transform: translateX(0) var(--rotation, rotate(0deg));
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(20%) var(--rotation, rotate(0deg));
+  transition: all .5s ease;
+}
+
+.animate-slide-right {
+  opacity: 1;
+  transform: translateX(0) var(--rotation, rotate(0deg));
+}
+
+.slide-top {
+  opacity: 0;
+  transform: translateY(20%) var(--rotation, rotate(0deg));
+  transition: all .5s ease;
+}
+
+.animate-slide-top {
+  opacity: 1;
+  transform: translateY(0) var(--rotation, rotate(0deg));
+}
+
+.slide-bottom {
+  opacity: 0;
+  transform: translateY(-20%) var(--rotation, rotate(0deg));
+  transition: all .5s ease;
+}
+
+.animate-slide-bottom {
+  opacity: 1;
+  transform: translateY(0) var(--rotation, rotate(0deg));
+}
