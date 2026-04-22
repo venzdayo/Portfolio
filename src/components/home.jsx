@@ -60,27 +60,27 @@ export default function Home() {
             <h1 className="text-center align-center text-sand font-jetbrains font-bold">[VENZ MILADO]</h1>
           </div>
           <div className="typewriter w-65 h-7 bg-dark-rose">
-            <h1 className="text-center align-center text-sand font-jetbrains font-bold">[DEVELOPER/PROGRAMMER]</h1>
+            <h1 className="text-center align-center text-sand font-jetbrains font-bold">[ DEVELOPER | ANALYST ]</h1>
           </div>
         </div>
 
         {/* TEXT */}
-        <div className="typewriter absolute top-15 left-15 w-65 h-7 bg-dark-orange">
-          <h1 className="text-center align-center text-sand font-jetbrains font-bold">[PORTFOLIO-VER-{new Date().getFullYear()}-V1]</h1>
+        <div className="typewriter absolute top-15 left-15 w-65 h-7 bg-dark-orange slide-bottom">
+          <h1 className="text-center align-center text-sand font-jetbrains font-bold ">[PORTFOLIO-VER-{new Date().getFullYear()}-V1]</h1>
         </div>
-        <div className="typewriter absolute top-25 left-15 w-30 h-7 bg-dark-orange">
+        <div className="typewriter absolute top-25 left-15 w-30 h-7 bg-dark-orange slide-bottom">
           <h1 className="text-center align-center text-sand font-jetbrains font-bold">[{currentTime}]</h1>
         </div>
-        <div className="typewriter absolute bottom-15 left-15 w-95 h-7 bg-sand">
+        <div className="typewriter absolute bottom-15 left-15 w-95 h-7 bg-sand slide-top">
           <h1 className="text-center align-center text-dark-gray font-jetbrains font-bold">[ZUEV WORKERS' CLUB, MOSCOW, USSR]</h1>
         </div>
-        <div className="typewriter absolute bottom-5 left-15 w-40 h-7 bg-sand">
-          <h1 className="text-center align-center text-dark-gray font-jetbrains font-bold">[ILYA GOLOSOV]</h1>
+        <div className="typewriter absolute bottom-5 left-15 w-40 h-7 bg-sand slide-top">
+          <h1 className="text-center align-center text-dark-gray font-jetbrains font-bold">[ILYA_GOLOSOV]</h1>
         </div>
-        <div className="typewriter absolute bottom-15 right-25 w-50 h-7 bg-sand">
-          <h1 className="text-center align-center text-dark-gray font-jetbrains font-bold">[IAKOV CHERNIKOV]</h1>
+        <div className="typewriter absolute bottom-15 right-25 w-50 h-7 bg-sand slide-top">
+          <h1 className="text-center align-center text-dark-gray font-jetbrains font-bold">[IAKOV_CHERNIKOV]</h1>
         </div>
-        <div className="typewriter absolute bottom-5 right-25 w-80 h-7 bg-sand">
+        <div className="typewriter absolute bottom-5 right-25 w-80 h-7 bg-sand slide-top">
           <h1 className="text-center align-center text-dark-gray font-jetbrains font-bold">[ARKHITEKTURNYE FANTAZII 28]</h1>
         </div>
       </section>

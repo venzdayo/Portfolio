@@ -17,13 +17,13 @@ export default function Sidebar() {
     if (hoveredIndex === null) return 'translateY(0)'
     
     const distance = index - hoveredIndex
-    const offset = distance * 20
+    const offset = distance * 10
     
     return `translateY(${offset}px)`
   }
 
   return (
-    <div className="fixed flex items-center justify-start h-screen z-50 -ml-30">
+    <div className="fixed flex items-center justify-start h-screen z-50 -ml-30 slide-left">
        <ul className="timeline timeline-vertical gap-2">
         {items.map((item, index) => (
           <li 
