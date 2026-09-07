@@ -10,7 +10,7 @@ export default function Home() {
 
             {/* TITLE */}
             <h1 className="absolute z-50 top-[20vh] right-[10vw] text-8xl font-bold font-bebas slide-top-right" style={{ filter: "drop-shadow(5px 5px 0 var(--color-dusty-pink))", rotate: "21.5deg" }}
-            >ABOUT ME</h1>
+            >[ABOUT ME]</h1>
 
             {/* SHAPES */}
             <div className="absolute right-10 opacity-80 z-30" style={{
@@ -20,11 +20,18 @@ export default function Home() {
                 borderLeft: "50vw solid transparent"
             }} ></div>
 
+            <div className="absolute right-10 bottom-10 opacity-80 z-0" style={{
+                width: 0,
+                height: 0,
+                borderBottom: "40vh solid var(--color-dark-orange)",
+                borderLeft: "50vw solid transparent"
+            }} ></div>
+
             <div className=" absolute bottom-10 top-10 right-10 left-35 opacity-80 -z-30" style={{
                 background: "var(--color-sand",
                 
                 /* The Magic: Polygon points are (x y) */
-                clipPath: "polygon(0% 0%, 40% 0%, 100% 48%, 100% 100%, 0% 100%, 0% 50%)"
+                clipPath: "polygon(0% 0%, 40% 0%, 100% 48%, 100% 52%, 40% 100%, 0% 100%)"
             }} >
             </div>    
 
@@ -35,12 +42,12 @@ export default function Home() {
                 {/* PICTURE */}
                 <div className="relative self-center ml-10 w-fit translate-x-20 -translate-y-10">
                     <div
-                        className="absolute top-5 left-5 z-0 h-full w-full bg-dark-rose"
+                        className="absolute -rotate-5 top-5 left-5 z-0 h-full w-full bg-dark-rose"
                     />
 
                     <img
                         draggable="false"
-                        className="relative z-10 block max-w-xs select-none"
+                        className="relative z-20 block max-w-xs select-none"
                         src={assets.me}
                         alt="VENZ MILADO"
                     />
@@ -53,7 +60,7 @@ export default function Home() {
                     <div className="z-40 translate-y-25 text-dark-gray" style={{
                         width: "40vw"
                     }}>
-                        <h1 className="font-inter font-bold text-5xl">Yahoo!</h1>
+                        <h1 className="font-montserrat font-bold text-5xl">Привет!</h1>
                         <h1 className="font-jetbrains font-bold text-2xl">I'm Venz Milado</h1>
                         <p className="font-bebas italic text-xl">I am a Magna Cum Laude graduate of BS in Information Technology and DOST-SEI Scholar. I'm most experienced in Front-End development and Data Analysis. </p>
                     </div>
