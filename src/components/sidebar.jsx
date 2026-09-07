@@ -11,6 +11,7 @@ export default function Sidebar() {
     { name: 'EDUCATION'},
     { name: 'EXPERIENCE'},
     { name: 'PROJECTS'},
+    { name: 'CONTACT'},
   ]
 
   const getTransform = (index) => {
