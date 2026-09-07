@@ -82,4 +82,80 @@ export function initAnimations() {
         const el = animation_elements_bottom[i];
         observer_bottom.observe(el);
     }
+
+    const animation_elements_bottom_left = document.querySelectorAll(".slide-bottom-left");
+
+    const observer_bottom_left = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate-slide-bottom-left");
+            } else {
+                entry.target.classList.remove("animate-slide-bottom-left");
+            }
+        })
+    }, {
+        threshold: 0.45
+    });
+
+    for (let i = 0; i < animation_elements_bottom_left.length; i++){
+        const el = animation_elements_bottom_left[i];
+        observer_bottom_left.observe(el);
+    }
+
+    const animation_elements_bottom_right = document.querySelectorAll(".slide-bottom-right");
+
+    const observer_bottom_right = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate-slide-bottom-right");
+            } else {
+                entry.target.classList.remove("animate-slide-bottom-right");
+            }
+        })
+    }, {
+        threshold: 0.45
+    });
+
+    for (let i = 0; i < animation_elements_bottom_right.length; i++){
+        const el = animation_elements_bottom_right[i];
+        observer_bottom_right.observe(el);
+    }
+
+    const animation_elements_top_left = document.querySelectorAll(".slide-top-left");
+
+    const observer_top_left = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate-slide-top-left");
+            } else {
+                entry.target.classList.remove("animate-slide-top-left");
+            }
+        })
+    }, {
+        threshold: 0.45
+    });
+
+    for (let i = 0; i < animation_elements_top_left.length; i++){
+        const el = animation_elements_top_left[i];
+        observer_top_left.observe(el);
+    }
+
+    const animation_elements_top_right = document.querySelectorAll(".slide-top-right");
+
+    const observer_top_right = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate-slide-top-right");
+            } else {
+                entry.target.classList.remove("animate-slide-top-right");
+            }
+        })
+    }, {
+        threshold: 0.45
+    });
+
+    for (let i = 0; i < animation_elements_top_right.length; i++){
+        const el = animation_elements_top_right[i];
+        observer_top_right.observe(el);
+    }
 }

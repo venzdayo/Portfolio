@@ -41,3 +41,47 @@
   opacity: 1;
   transform: translateY(0) var(--rotation, rotate(0deg));
 }
+
+.slide-top-left {
+  opacity: 0;
+  transform: translate(-20%, 20%) var(--rotation, rotate(0deg));
+  transition: all .5s ease;
+}
+
+.animate-slide-top-left {
+  opacity: 1;
+  transform: translate(0, 0) var(--rotation, rotate(0deg));
+}
+
+.slide-top-right {
+  opacity: 0;
+  transform: translate(20%, 20%) var(--rotation, rotate(0deg));
+  transition: all .5s ease;
+}
+
+.animate-slide-top-right {
+  opacity: 1;
+  transform: translate(0, 0) var(--rotation, rotate(0deg));
+}
+
+.slide-bottom-left {
+  opacity: 0;
+  transform: translate(-20%, -20%) var(--rotation, rotate(0deg));
+  transition: all .5s ease;
+}
+
+.animate-slide-bottom-left {
+  opacity: 1;
+  transform: translate(0, 0) var(--rotation, rotate(0deg));
+}
+
+.slide-bottom-right {
+  opacity: 0;
+  transform: translate(20%, -20%) var(--rotation, rotate(0deg));
+  transition: all .5s ease;
+} 
+
+.animate-slide-bottom-right {
+  opacity: 1;
+  transform: translate(0, 0) var(--rotation, rotate(0deg));
+}

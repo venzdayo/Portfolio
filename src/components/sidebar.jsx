@@ -22,6 +22,12 @@ export default function Sidebar() {
     return `translateY(${offset}px)`
   }
 
+  const handleHomeClick = (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.history.pushState("", document.title, window.location.pathname + window.location.search);
+  };
+
   return (
     <div className="fixed flex items-center justify-start h-screen z-50 -ml-30 slide-left">
        <ul className="timeline timeline-vertical gap-2">
@@ -33,13 +39,29 @@ export default function Sidebar() {
               transition: 'transform 0.3s ease',
             }}
           >
-            <a href={`#${item.name.toLowerCase()}`} style={{ display: 'contents' }}>
+            {index === 0 ? (
+              <a href="/" onClick={handleHomeClick} style={{ display: 'contents' }}>
                 <div className="timeline-middle z-50 hover:scale-120 transition-transform duration-200" onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
                   <div className='w-20 h-10 bg-dark-rose flex items-center justify-center'>
                     <h1 className="font-jetbrains font-bold text-sand">[CAT-0{index+1}]</h1>
                   </div>
                 </div>
-            </a>
+                <div className="timeline-end timeline-box relative px-5 pl-10 z-40 h-10 font-jetbrains font-bold text-lg bg-pink text-white border-none" style={{ pointerEvents: hoveredIndex !== null && index !== hoveredIndex ? 'none' : 'auto' }}>
+                  {item.name}
+                </div>
+              </a>
+            ) : (
+              <a href={`#${item.name.toLowerCase()}`} style={{ display: 'contents' }}>
+                <div className="timeline-middle z-50 hover:scale-120 transition-transform duration-200" onMouseEnter={() => setHoveredIndex(index)} onMouseLeave={() => setHoveredIndex(null)}>
+                  <div className='w-20 h-10 bg-dark-rose flex items-center justify-center'>
+                    <h1 className="font-jetbrains font-bold text-sand">[CAT-0{index+1}]</h1>
+                  </div>
+                </div>
+                <div className="timeline-end timeline-box relative px-5 pl-10 z-40 h-10 font-jetbrains font-bold text-lg bg-pink text-white border-none" style={{ pointerEvents: hoveredIndex !== null && index !== hoveredIndex ? 'none' : 'auto' }}>
+                  {item.name}
+                </div>
+              </a>
+            )}
             <div className="timeline-end timeline-box relative px-5 pl-10 z-40 h-10 font-jetbrains font-bold text-lg bg-pink text-white border-none" style={{ pointerEvents: hoveredIndex !== null && index !== hoveredIndex ? 'none' : 'auto' }}>
                 {item.name}
             </div>
