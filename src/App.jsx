@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Sidebar from './components/sidebar'
 import Home from './components/home'
 import About from './components/about'
+import Education from './components/education'
 import * as assets from './assets'
 import './index.css'
 import './components/animations.css'
@@ -21,6 +22,8 @@ function App() {
       <Home />
 
       <About />
+
+      <Education />
 
     </>
   )
